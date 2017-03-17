@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>tdd_lidar_demo</name>
+  <name>ctools_gtest_pkg_shell</name>
   <version>0.0.0</version>
-  <description>LIDAR DEMO!!!</description>
+  <description>Buildable ROS package shell setup as a catkin tools package and with unit tests</description>
   <maintainer email="josephpgilsenan@gmail.com">joe</maintainer>
   <license>BSD</license>
   <author email="josephpgilsenan@gmail.com">joe</author> >
@@ -10,9 +10,8 @@
   <buildtool_depend>catkin</buildtool_depend>
     
   <depend>roscpp</depend>
+  <depend>rospy</depend>
   <depend>std_msgs</depend>
-  <depend>sensor_msgs</depend>
-  <depend>tf</depend>
   
   <test_depend>rosunit</test_depend>
 

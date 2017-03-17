@@ -1,9 +1,9 @@
 #include "gtest/gtest.h"
 
-#include "tdd_lidar_demo/tdd_lidar_demo.h"
+#include "ctools_gtest_pkg_shell/main.h"
 
 
-TEST(TestTddLidarDemo, emptyTest)
+TEST(PackageShellTestPlaceholder, emptyTest)
 {
 	EXPECT_EQ(1, 1);
 }

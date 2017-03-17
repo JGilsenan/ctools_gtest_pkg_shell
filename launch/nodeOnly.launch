@@ -1,9 +1,0 @@
-<launch>
-  <rosparam file="$(find tdd_lidar_demo)/lidar_demo_params.yaml" command="load" />
-
-  <node pkg="tf" type="static_transform_publisher" name="base_to_laser" 
-    args="0.0 0.0 0 0 0 0 /map /world 40" /> 
-    
-  <node pkg="tdd_lidar_demo" type="tdd_demo" name="tdd_demo" respawn="true" output="screen" />
-
-</launch>

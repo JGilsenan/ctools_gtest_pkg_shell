@@ -30,13 +30,13 @@
  *********************************************************************/
 
 #include "ros/ros.h"
-#include "tdd_lidar_demo/tdd_lidar_demo.h"
+#include "ctools_gtest_pkg_shell/main.h"
 
 
 
 int main(int argc, char **argv){
 
-  ros::init(argc, argv, "tdd_demo");
+  ros::init(argc, argv, "pkg_shell");
   ros::NodeHandle n;
   ros::NodeHandle nh("~");
 
