@@ -30,7 +30,7 @@
  *********************************************************************/
 
 #include "ros/ros.h"
-#include "tdd_lidar_demo/lidar_demo.h"
+#include "tdd_lidar_demo/tdd_lidar_demo.h"
 
 
 

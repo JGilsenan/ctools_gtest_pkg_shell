@@ -19,7 +19,7 @@ catkin_package(
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_library(tdd_lidar_demo src/tdd_lidar_demo.cpp)
-target_link_libraries(lidar_demo ${catkin_LIBRARIES})
+target_link_libraries(tdd_lidar_demo ${catkin_LIBRARIES})
 
 add_executable(tdd_demo src/tdd_lidar_demo.cpp)
 target_link_libraries(tdd_demo ${catkin_LIBRARIES})
