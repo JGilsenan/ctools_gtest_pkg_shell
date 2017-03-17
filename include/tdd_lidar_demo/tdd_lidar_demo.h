@@ -1,0 +1,7 @@
+#ifndef INCLUDE_TDD_LIDAR_DEMO_TDD_LIDAR_DEMO_H_
+#define INCLUDE_TDD_LIDAR_DEMO_TDD_LIDAR_DEMO_H_
+
+namespace tdd_lidar_demo{
+
+}
+#endif /* INCLUDE_TDD_LIDAR_DEMO_TDD_LIDAR_DEMO_H_ */
