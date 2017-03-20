@@ -1,0 +1,3 @@
+<launch>
+  <param name="test_AAAAAA_string"  value="mystring" />
+</launch>

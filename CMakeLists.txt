@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS roscpp rospy std_msgs
-  DEPENDS system_lib
+  #DEPENDS system_lib
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS})
@@ -24,8 +24,16 @@ add_executable(pkg_shell src/main.cpp)
 target_link_libraries(pkg_shell ${catkin_LIBRARIES})
 
 if (CATKIN_ENABLE_TESTING)
-  catkin_add_gtest(utest test/utest.cpp)
+
+  # For running unit tests (gtest) alone
+  catkin_add_gtest(utest src/test/utest.cpp)
   target_link_libraries(utest ${catkin_LIBRARIES} ctools_gtest_pkg_shell)
+  
+  # For running ROS tests (integration) NOTE: I believe it is possible to do these together
+  find_package(rostest REQUIRED)
+  add_rostest_gtest(shell_node_tests test/node_tests.test src/test/utest.cpp)
+  target_link_libraries(shell_node_tests ${catkin_LIBRARIES} ctools_gtest_pkg_shell)
+
 endif()
 
 
