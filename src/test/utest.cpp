@@ -1,4 +1,5 @@
 #include "gtest/gtest.h"
+#include "gmock/gmock.h"
 
 #include "ctools_gtest_pkg_shell/main.h"
 

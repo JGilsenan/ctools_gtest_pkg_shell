@@ -33,7 +33,6 @@
 #include "ctools_gtest_pkg_shell/main.h"
 
 
-
 int main(int argc, char **argv){
 
   ros::init(argc, argv, "pkg_shell");
