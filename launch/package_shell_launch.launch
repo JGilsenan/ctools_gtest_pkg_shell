@@ -1,7 +1,9 @@
 <launch>
 
-  <rosparam file="$(find ctools_gtest_pkg_shell)/params.yaml" command="load" />
+  <rosparam file="$(find tdd_cpp_examples)/params.yaml" command="load" />
 
-  <node pkg="ctools_gtest_pkg_shell" type="pkg_shell" name="pkg_shell" respawn="true" output="screen" />
+  <node pkg="tdd_cpp_examples" type="pkg_shell" name="pkg_shell" respawn="true" output="screen" />
 
 </launch>
+
+

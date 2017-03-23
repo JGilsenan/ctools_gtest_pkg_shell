@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ctools_gtest_pkg_shell</name>
+  <name>tdd_cpp_examples</name>
   <version>0.0.0</version>
   <description>Buildable ROS package shell setup as a catkin tools package and with unit tests</description>
   <maintainer email="josephpgilsenan@gmail.com">joe</maintainer>

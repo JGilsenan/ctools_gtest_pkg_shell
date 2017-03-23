@@ -30,12 +30,12 @@
  *********************************************************************/
 
 #include "ros/ros.h"
-#include "ctools_gtest_pkg_shell/main.h"
+#include "tdd_cpp_examples/main.h"
 
 
 int main(int argc, char **argv){
 
-  ros::init(argc, argv, "pkg_shell");
+  ros::init(argc, argv, "examples");
   ros::NodeHandle n;
   ros::NodeHandle nh("~");
 

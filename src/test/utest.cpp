@@ -1,17 +1,26 @@
-#include "gtest/gtest.h"
+#include <string>
+
+class Soundex {
+
+public:
+  std::string encode(const std::string& word) const {
+    return "";
+  }
+
+};
+
+
 #include "gmock/gmock.h"
+#include "tdd_cpp_examples/main.h"
 
-#include "ctools_gtest_pkg_shell/main.h"
 
-
-TEST(PackageShellTestPlaceholder, emptyTest)
+TEST(SoundexEncoding, RetainsSoleLetterOfOneLetterWord)
 {
-	EXPECT_EQ(1, 1);
-}
+	Soundex soundex;
 
-TEST(PackageShellTestPlaceholder, emptyTestTwo)
-{
-  EXPECT_EQ(1, 1);
+	auto encoded = soundex.encode("A");
+
+	ASSERT_THAT(encoded, testing::Eq("A"));
 }
 
 int main(int argc, char **argv){
